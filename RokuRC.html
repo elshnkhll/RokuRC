@@ -4,7 +4,7 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roku Remote Tool</title>
+    <title>📺 Roku RC</title>
 
     <link rel="icon" href="http://devtools.web.roku.com/RokuRemote/images/favicon.ico">
     
@@ -83,7 +83,8 @@ body {
   cursor: pointer;
 }
 .remote-buttons {
-  margin-top: 30px;
+  margin: 30px;
+  max-width: 400px;
   padding: 15px 15px 3px 15px;
   border: 1px solid #979797;
   border-radius: 8px;
@@ -147,9 +148,32 @@ body {
 
 
 <body>
+
+
   <div class="remote-buttons">
+
+      <h1>📺 Roku RC</h1>
+
+      <div class="buttons-row">
+        <div class="clickable remote-button" data-action="PowerOn">
+          <span class="remote-ok" style="font-size: 22px;">⏻</span>
+        </div>
+        <div class="clickable remote-button" data-action="VolumeMute">
+          <span class="remote-ok">🔇</span>
+        </div>
+        <div class="clickable remote-button" data-action="VolumeDown">
+          <span class="remote-ok">🔈</span>
+        </div>
+        <div class="clickable remote-button" data-action="VolumeUp">
+          <span class="remote-ok">🔊</span>
+        </div>
+      </div>
+
+
+
+
     <div class="buttons-row">
-      <div class="clickable remote-button double">
+      <div class="clickable remote-button double" data-action="Back">
         <svg name="arrow-back" size="14" class="ret-icon arrow-back remote-arrow-back" width="14px" height="14px" viewBox="0 0 17 14">
           <g fill="none" fill-rule="evenodd" stroke="none" class="ret-icon-fill" stroke-width="1">
             <g fill="#FFF" transform="translate(-183 -616)">
@@ -162,7 +186,7 @@ body {
           </g>
         </svg>
       </div>
-      <div class="clickable remote-button double">
+      <div class="clickable remote-button double" data-action="Home">
         <svg name="home" size="14" class="ret-icon home remote-home" width="14px" height="14px" viewBox="0 0 16 14">
           <g fill="none" fill-rule="evenodd" stroke="none" class="ret-icon-fill" stroke-width="1">
             <g fill="#FFF" transform="translate(-323 -615)">
@@ -180,29 +204,29 @@ body {
     </div>
     <div class="remote-buttons-group">
       <div class="buttons-row">
-        <div class="clickable remote-button center">
+        <div class="clickable remote-button center" data-action="Up">
           <svg name="arrow_up" size="14" class="ret-icon arrow_up remote-arrow-down" width="14px" height="14px" viewBox="0 0 18 12">
             <polygon class="ret-icon-fill" transform="translate(-423.000000, -1139.000000) translate(423.000000, 1139.000000) translate(9.000000, 6.071429) scale(1, -1) rotate(90.000000) translate(-9.000000, -6.071429) " points="5.58223573 -2.92857143 3.5 -0.827134228 10.3355285 6.07142857 3.5 12.9681168 5.58223573 15.0714286 14.5 6.07142857"></polygon>
           </svg>
         </div>
       </div>
       <div class="buttons-row">
-        <div class="clickable remote-button">
+        <div class="clickable remote-button" data-action="Left">
           <svg name="arrow_left" size="14" class="ret-icon arrow_left remote-arrow-down" width="14px" height="14px" viewBox="0 0 13 18">
             <polygon class="ret-icon-fill ret-icon-stroke" transform="translate(-426.000000, -1322.000000) translate(427.000000, 1322.000000) translate(5.500000, 9.000000) scale(-1, 1) translate(-5.500000, -9.000000) " points="2.08223573 0 0 2.1014372 6.83552854 9 0 15.8966882 2.08223573 18 11 9" stroke-width="0.5" fill-rule="evenodd"></polygon>
           </svg>
         </div>
-        <div class="clickable remote-button">
+        <div class="clickable remote-button" data-action="Select">
           <span class="remote-ok">OK</span>
         </div>
-        <div class="clickable remote-button">
+        <div class="clickable remote-button" data-action="Right">
           <svg name="arrow_right" size="14" class="ret-icon arrow_right remote-arrow-down" width="14px" height="14px" viewBox="0 0 13 18">
             <polygon class="ret-icon-fill ret-icon-stroke" points="2.08223573 0 0 2.1014372 6.83552854 9 0 15.8966882 2.08223573 18 11 9" transform="translate(-360.000000, -809.000000) translate(361.000000, 809.000000)" stroke-width="0.5" fill-rule="evenodd"></polygon>
           </svg>
         </div>
       </div>
       <div class="buttons-row">
-        <div class="clickable remote-button center">
+        <div class="clickable remote-button center" data-action="Down">
           <svg name="arrow_down" size="14" class="ret-icon arrow_down remote-arrow-down" width="14px" height="14px" viewBox="0 0 18 12">
             <polygon class="ret-icon-fill" transform="translate(-68.000000, -1097.000000) translate(68.000000, 1097.000000) translate(9.000000, 5.928571) rotate(90.000000) translate(-9.000000, -5.928571) " points="5.58223573 -3.07142857 3.5 -0.969991371 10.3355285 5.92857143 3.5 12.8252596 5.58223573 14.9285714 14.5 5.92857143" fill-rule="evenodd"></polygon>
           </svg>
@@ -210,7 +234,7 @@ body {
       </div>
     </div>
     <div class="buttons-row">
-      <div class="clickable remote-button double">
+      <div class="clickable remote-button double" data-action="InstantReplay">
         <svg name="repeat" size="14" class="ret-icon repeat remote-repeat" width="14px" height="14px" viewBox="0 0 16 17">
           <g fill="none" fill-rule="evenodd" stroke="none" class="ret-icon-fill" stroke-width="1">
             <g fill="#FFF" transform="translate(-183 -830)">
@@ -225,7 +249,7 @@ body {
           </g>
         </svg>
       </div>
-      <div class="clickable remote-button double">
+      <div class="clickable remote-button double" data-action="Info">
         <svg name="asterisc" size="14" class="ret-icon asterisc remote-start" width="14px" height="14px" viewBox="0 0 16 17">
           <g fill="none" fill-rule="evenodd" stroke="none" class="ret-icon-fill" stroke-width="1">
             <g fill="#FFF" transform="translate(-323 -830)">
@@ -242,7 +266,7 @@ body {
       </div>
     </div>
     <div class="buttons-row">
-      <div class="clickable remote-button">
+      <div class="clickable remote-button" data-action="Rev">
         <svg name="fast-forward-left" size="14" class="ret-icon fast-forward-left remote-fast-forward-left" width="14px" height="14px" viewBox="0 0 21 15">
           <g fill="none" fill-rule="evenodd" class="ret-icon-fill" stroke-width="1">
             <g fill="#FFF" transform="translate(-158 -886)">
@@ -257,7 +281,7 @@ body {
           </g>
         </svg>
       </div>
-      <div class="clickable remote-button">
+      <div class="clickable remote-button" data-action="Play">
         <svg name="play" size="14" class="ret-icon play remote-play" width="14px" height="14px" viewBox="0 0 11 14">
           <g fill="none" fill-rule="evenodd" stroke="none" class="ret-icon-fill" stroke-width="1">
             <g fill="#FFF" transform="translate(-258 -886)">
@@ -272,7 +296,7 @@ body {
           </g>
         </svg>
       </div>
-      <div class="clickable remote-button">
+      <div class="clickable remote-button" data-action="Fwd">
         <svg name="fast-forward-right" size="14" class="ret-icon fast-forward-right remote-fast-forward-right" width="14px" height="14px" viewBox="0 0 21 15">
           <g fill="none" fill-rule="evenodd" stroke="none" class="ret-icon-fill" stroke-width="1">
             <g fill="#FFF" transform="translate(-344 -886)">
@@ -288,9 +312,46 @@ body {
         </svg>
       </div>
     </div>
-  </div>
-</body>
 
+    <img id="dvc_img"
+        src="http://192.168.1.1/device-image.png"
+        style="border: 0px solid orange; 
+        margin: 0 auto 0 auto; filter: invert(1)  contrast(2.5);
+        width: 100%; height: 50px; object-fit: cover; object-position: -5% 47%;"
+        onload="console.log( this )"
+    >
+
+  </div>
+
+
+</body>
+<script>
+
+const urlParams = new URLSearchParams(window.location.search);
+tv_ip = urlParams.get('MyRokuTVIP') ;
+
+
+var elements = document.getElementsByClassName("clickable");
+
+var do_on_cllick = function() {
+    var actn = this.getAttribute("data-action");
+    fetch('http://' + tv_ip + ':8060/keypress/' + actn , {
+      method: 'POST',
+      body: ''
+    });
+    if(actn == "PowerOn") this.setAttribute("data-action","PowerOff");
+    if(actn == "PowerOff") this.setAttribute("data-action","PowerOn");
+};
+
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', do_on_cllick, false);
+}
+
+document.getElementById("dvc_img").src = 'http://' + tv_ip + ':8060/device-image.png';
+var link = document.querySelector("link[rel~='icon']");
+
+link.href = 'http://' + tv_ip + ':8060/device-image.png';
+</script>
 
 
 </html>
