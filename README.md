@@ -1,4 +1,10 @@
 # RokuRC
 
 
-remote control for Roku TV
+Roku Remote Control
+
+http://rokurc.com
+
+Web Browser based Roku TV Remote control with Power On/Off, Mute, Voume Up/Down Buttons
+
+It does not use IR, so you can control the TV in the other room.
