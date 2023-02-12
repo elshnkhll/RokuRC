@@ -12,4 +12,5 @@ It does not use IR, so you can control the TV in the other room.
 Works in Chrome, Safari, Edge, FireFox.
 
 
-(https://www.youtube.com/watch?v=_TTzeqaWeXE)
+{% include youtube.html id="JLMbpiywVxQ" %}
+
