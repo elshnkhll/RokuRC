@@ -1,42 +1,69 @@
-<!DOCTYPE html>
-<!-- saved from url=(0040)http://devtools.web.roku.com/RokuRemote/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>📺 Roku RC</title>
 
-    <link rel="icon" href="http://devtools.web.roku.com/RokuRemote/images/favicon.ico">
+<!DOCTYPE html>
+<html><head>
+
+<script 
+	async 
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9450492747422027"
+    crossorigin="anonymous"
+></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="http://rokurc.com/">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Control your Roku&#174; TV conveniently from any computer or smartphone.">
+<meta name="author" content="RokuRC" data-react-helmet="true">
+<meta name="copyright" content="2023">
+<meta name="theme-color" content="#662d91">
+<meta property="og:title" content="Roku&#174; Remote Control | the best browser based remote control.">
+<meta property="og:type" content="Website" data-react-helmet="true">
+<meta property="og:url" content="http://rokurc.com/" data-react-helmet="true">
+<meta property="og:image" content="http://rokurc.com/imgs/icon.png" data-react-helmet="true">
+
+<meta property="og:image:width"  content="256" />
+<meta property="og:image:height" content="256" />
+
+<meta property="og:description" content="Control your Roku&#174; TV conveniently from any computer or smartphone." data-react-helmet="true">
+<meta property="og:locale" content="en_US" data-react-helmet="true">
+<meta property="og:site_name" content="RokuRC" data-react-helmet="true">
+<meta name="twitter:card" content="summary" data-react-helmet="true">
+<meta name="twitter:url" content="http://rokurc.com/" data-react-helmet="true">
+<meta name="twitter:title" content="Roku&#174; Remote Control | the best browser based remote control." data-react-helmet="true">
+<meta name="twitter:description" content="Control your Roku&#174; TV conveniently from any computer or smartphone." data-react-helmet="true">
+<meta name="twitter:image" content="http://rokurc.com/imgs/icon.png" data-react-helmet="true">
+<meta name="twitter:site" content="@RokuPlayer" data-react-helmet="true">
+<meta name="twitter:creator" content="@RokuPlayer" data-react-helmet="true">
+<meta itemprop="description" content="Control your Roku&#174; TV conveniently from any computer or smartphone." data-react-helmet="true">
+<meta itemprop="image" content="http://rokurc.com/imgs/icon.png" data-react-helmet="true">
+<meta itemprop="name" content="RokuRC" data-react-helmet="true">
+<meta itemprop="url" content="http://rokurc.com/" data-react-helmet="true">
+<title>Roku&#174; Remote Control | the best browser based remote control.</title>
+<link rel="shortcut icon" type="image/png" sizes="256x256" href="http://rokurc.com/imgs/icon.png">
+
+<META NAME="robots" CONTENT="nofollow">
     
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SB7MWDSDVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SB7MWDSDVF');
+</script>
+
+
+	 
 <style>
 
 @charset "UTF-8";
 
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
 svg:not(:root) {
   overflow: hidden;
 }
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-@media print {
-  *,
-  *:before,
-  *:after {
-    color: #000 !important;
-    text-shadow: none !important;
-    background: transparent !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-  }
-}
-
-
 
 * {
   -webkit-box-sizing: border-box;
@@ -59,17 +86,20 @@ body {
   line-height: 1.42857143;
   color: #333333;
   background-color: #fff;
+  
 }
 
+h2 {
+	margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
 
 @-ms-viewport {
   width: device-width;
 }
-
-
-
-
-
 
 
 .ret-roku-input:focused {
@@ -79,20 +109,22 @@ body {
 .clickable {
   transition: all 150ms ease;
 }
-.clickable:hover {
+.clickable:hover{
   cursor: pointer;
 }
 .remote-buttons {
-  margin: 30px;
-  max-width: 400px;
+  margin: 20px auto;
+  max-width: 444px;
+  min-width: 300px;
   padding: 15px 15px 3px 15px;
   border: 1px solid #979797;
   border-radius: 8px;
+  user-select: none;
 }
 .buttons-row {
   display: flex;
   margin-bottom: 12px;
-  height: 42px;
+  height: 45px;
   white-space: nowrap;
 }
 .remote-buttons-group {
@@ -103,7 +135,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 31.5%;
-  max-height: 42px;
+  max-height: 45px;
   margin-right: 2.5%;
   padding: 11px 0;
   text-align: center;
@@ -138,8 +170,6 @@ body {
 }
 
 
-
-
 </style>
 
 
@@ -150,24 +180,31 @@ body {
 <body>
 
 
-  <div class="remote-buttons">
+  <div id="no-ads" class="remote-buttons">
 
-      <h1>📺 Roku RC</h1>
+		<h1 style="display: none;">Roku&#174; Remote Control</h1> 
+		<h2 style="text-align:left;float:left;color: #49247A;">Roku&#174; Remote Control</h1> 
+		<div style="text-align:right;float:right;font-size:30px;"> 
+			<a title="Open Info Page" href="help.php" target="_blank"> &#8505;&#65039;</a>
+			&nbsp;
+			<a title="Customise three Channell Buttons"  href="customize.php?MyRokuTVIP=192.168.2.19" class="hddn">&#9881;&#65039;</a>
+		</div> 
+		<div style="clear:both;"></div>
 
-      <div class="buttons-row">
-        <div class="clickable remote-button" data-action="PowerOn">
-          <span class="remote-ok" style="font-size: 22px;">⏻</span>
-        </div>
-        <div class="clickable remote-button" data-action="VolumeMute">
-          <span class="remote-ok">🔇</span>
-        </div>
-        <div class="clickable remote-button" data-action="VolumeDown">
-          <span class="remote-ok">🔈</span>
-        </div>
-        <div class="clickable remote-button" data-action="VolumeUp">
-          <span class="remote-ok">🔊</span>
-        </div>
-      </div>
+	  <div class="buttons-row">
+		<div style="background-color: #f44336;" class="clickable remote-button" data-action="Power">
+		  <svg fill="white" width="20px" height="20px" viewBox="-2 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M7.498 17.1a7.128 7.128 0 0 1-.98-.068 7.455 7.455 0 0 1-1.795-.483 7.26 7.26 0 0 1-3.028-2.332A7.188 7.188 0 0 1 .73 12.52a7.304 7.304 0 0 1 .972-7.128 7.221 7.221 0 0 1 1.387-1.385 1.03 1.03 0 0 1 1.247 1.638 5.176 5.176 0 0 0-.993.989 5.313 5.313 0 0 0-.678 1.181 5.23 5.23 0 0 0-.348 1.292 5.22 5.22 0 0 0 .326 2.653 5.139 5.139 0 0 0 .69 1.212 5.205 5.205 0 0 0 .992.996 5.257 5.257 0 0 0 1.178.677 5.37 5.37 0 0 0 1.297.35 5.075 5.075 0 0 0 1.332.008 5.406 5.406 0 0 0 1.32-.343 5.289 5.289 0 0 0 2.211-1.682 5.18 5.18 0 0 0 1.02-2.465 5.2 5.2 0 0 0 .01-1.336 5.315 5.315 0 0 0-.343-1.318 5.195 5.195 0 0 0-.695-1.222 5.134 5.134 0 0 0-.987-.989 1.03 1.03 0 1 1 1.24-1.643 7.186 7.186 0 0 1 1.384 1.386 7.259 7.259 0 0 1 .97 1.706 7.413 7.413 0 0 1 .473 1.827 7.296 7.296 0 0 1-4.522 7.65 7.476 7.476 0 0 1-1.825.471 7.203 7.203 0 0 1-.89.056zM7.5 9.613a1.03 1.03 0 0 1-1.03-1.029V2.522a1.03 1.03 0 0 1 2.06 0v6.062a1.03 1.03 0 0 1-1.03 1.03z"/></svg>
+		</div>
+		<div class="clickable remote-button" data-action="VolumeMute">
+		  <svg fill="white" width="20px" height="20px" viewBox="-32 -32 576 576" xmlns="http://www.w3.org/2000/svg"><path d="M215.03 71.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c15.03 15.03 40.97 4.47 40.97-16.97V88.02c0-21.46-25.96-31.98-40.97-16.97zM461.64 256l45.64-45.64c6.3-6.3 6.3-16.52 0-22.82l-22.82-22.82c-6.3-6.3-16.52-6.3-22.82 0L416 210.36l-45.64-45.64c-6.3-6.3-16.52-6.3-22.82 0l-22.82 22.82c-6.3 6.3-6.3 16.52 0 22.82L370.36 256l-45.63 45.63c-6.3 6.3-6.3 16.52 0 22.82l22.82 22.82c6.3 6.3 16.52 6.3 22.82 0L416 301.64l45.64 45.64c6.3 6.3 16.52 6.3 22.82 0l22.82-22.82c6.3-6.3 6.3-16.52 0-22.82L461.64 256z"/></svg>
+		</div>
+		<div class="clickable remote-button" data-action="VolumeDown">
+		  <svg fill="white" width="20px" height="20px" viewBox="-32 -32 576 576" xmlns="http://www.w3.org/2000/svg"><path d="M215 71l-89 89H24a24 24 0 0 0-24 24v144a24 24 0 0 0 24 24h102.06L215 441c15 15 41 4.47 41-17V88c0-21.47-26-32-41-17z"/></svg>
+		</div>
+		<div class="clickable remote-button" data-action="VolumeUp">
+		  <svg fill="white" width="22px" height="20px" viewBox="-32 -32 576 576" xmlns="http://www.w3.org/2000/svg"><path d="M215.03 71.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c15.03 15.03 40.97 4.47 40.97-16.97V88.02c0-21.46-25.96-31.98-40.97-16.97zm233.32-51.08c-11.17-7.33-26.18-4.24-33.51 6.95-7.34 11.17-4.22 26.18 6.95 33.51 66.27 43.49 105.82 116.6 105.82 195.58 0 78.98-39.55 152.09-105.82 195.58-11.17 7.32-14.29 22.34-6.95 33.5 7.04 10.71 21.93 14.56 33.51 6.95C528.27 439.58 576 351.33 576 256S528.27 72.43 448.35 19.97zM480 256c0-63.53-32.06-121.94-85.77-156.24-11.19-7.14-26.03-3.82-33.12 7.46s-3.78 26.21 7.41 33.36C408.27 165.97 432 209.11 432 256s-23.73 90.03-63.48 115.42c-11.19 7.14-14.5 22.07-7.41 33.36 6.51 10.36 21.12 15.14 33.12 7.46C447.94 377.94 480 319.54 480 256zm-141.77-76.87c-11.58-6.33-26.19-2.16-32.61 9.45-6.39 11.61-2.16 26.2 9.45 32.61C327.98 228.28 336 241.63 336 256c0 14.38-8.02 27.72-20.92 34.81-11.61 6.41-15.84 21-9.45 32.61 6.43 11.66 21.05 15.8 32.61 9.45 28.23-15.55 45.77-45 45.77-76.88s-17.54-61.32-45.78-76.86z"/></svg>
+		</div>
+	  </div>
 
 
 
@@ -312,46 +349,190 @@ body {
         </svg>
       </div>
     </div>
+	
 
+<style>
+		
+	.remote-button.channel {
+		background-color: transparent !important;
+		border: 1px dotted red;
+		/* background-image: url(http://192.168.2.19:8060/query/icon/2213); */
+		background-repeat: no-repeat;
+		background-size: 100% 200%;
+		background-position-y: center;		
+		background-position-x: 33%;
+	}
+	
+	.remote-button.channel:hover {
+		cursor: pointer;
+	}	
+	
+	input.valueable {
+		font-size: 24px;
+		line-height: 30px;
+		color: #333333;
+		background-color: transparent !important;
+		border: 1px dotted green;
+		text-align: center;
+		border-radius: 5px;
+	}
+
+	input:placeholder-shown {
+	  font-size: 16px;
+	}
+
+	.hddn {
+		display: none;
+	}
+	
+	#no-ads .google-auto-placed {
+		display: none !important;
+	}
+
+</style>
+	
+	
+	
+	
+	  <div class="buttons-row">
+		<div id="ch_1" class="channel remote-button" data-action="none"></div>
+		<div id="ch_2" class="channel remote-button" data-action="none"></div>
+		<div id="ch_3" class="channel remote-button" data-action="none"></div>
+	  </div>	
+	
+	
+	
+	
+  <div class="buttons-row">
+
+  <!-- div id="eventsDiv"></div><br -->
+
+    <input value="  " type="text" id="inpt" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" 
+		style="
+			width: 100%; 
+			font-size: 16px; 
+			border: 1px solid #662D91;
+			border-radius: 15px;
+		" />
+    </div>
+  
     <img id="dvc_img"
-        src="http://192.168.1.1/device-image.png"
+        src="imgs/no_tv.png"
         style="border: 0px solid orange; 
-        margin: 0 auto 0 auto; filter: invert(1)  contrast(2.5);
-        width: 100%; height: 50px; object-fit: cover; object-position: -5% 47%;"
-        onload="console.log( this )"
+        margin: 0 auto 0 auto; filter: invert(1)  contrast(3);
+        width: 100%; height: 80px; object-fit: cover; object-position: -5% 47%;"
     >
-
+	
+	
+	
   </div>
+  
+  <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
-
+  
 </body>
 <script>
 
-const urlParams = new URLSearchParams(window.location.search);
-tv_ip = urlParams.get('MyRokuTVIP') ;
+var tv_ip = "192.168.2.19";
+var channels = document.getElementsByClassName("channel");
+var use_form = false;
 
-
-var elements = document.getElementsByClassName("clickable");
-
-var do_on_cllick = function() {
-    var actn = this.getAttribute("data-action");
-    fetch('http://' + tv_ip + ':8060/keypress/' + actn , {
-      method: 'POST',
-      body: ''
-    });
-    if(actn == "PowerOn") this.setAttribute("data-action","PowerOff");
-    if(actn == "PowerOff") this.setAttribute("data-action","PowerOn");
-};
-
-for (var i = 0; i < elements.length; i++) {
-    elements[i].addEventListener('click', do_on_cllick, false);
+function do_on_channel() {
+    var e = this.getAttribute("data-action");
+	if ( e != "none" ) {
+		do_transmit("launch", e);
+	}
 }
 
-document.getElementById("dvc_img").src = 'http://' + tv_ip + ':8060/device-image.png';
-var link = document.querySelector("link[rel~='icon']");
+for (var i = 0; i < channels.length; i++) channels[i].addEventListener("click", do_on_channel, !1);
+var elements = document.getElementsByClassName("clickable");
 
-link.href = 'http://' + tv_ip + ':8060/device-image.png';
+var form = document.createElement("form");
+document.body.appendChild(form);
+form.method = "POST";
+form.target = "dummyframe";
+
+function do_on_click() {
+    var e = this.getAttribute("data-action");
+	
+	
+	do_transmit("keypress", e);
+
+	// if( e == "PowerOn") this.setAttribute("data-action", "PowerOff");
+	// if( e == "PowerOff") this.setAttribute("data-action", "PowerOn");
+	
+}
+
+function do_transmit(k,v){
+	if( use_form ){
+		form.action = "http://" + tv_ip + ":8060/" + k + "/" + v;
+		form.submit();				
+	}else{
+		fetch("http://" + tv_ip + ":8060/" + k + "/" + v, {
+			method: "POST",
+			body: ""
+		});
+	}	
+	console.log(k, v);
+}
+
+for (var i = 0; i < elements.length; i++) elements[i].addEventListener("click", do_on_click, !1);
+
+
+
+
+
+
+
+var dvc_img = document.getElementById("dvc_img");
+var tester = new Image();
+var dvc_img_url = "http://" + tv_ip + ":8060/device-image.png";
+
+
+
+tester.onload = function() {
+    if (dvc_img.src = dvc_img_url, localStorage.getItem(tv_ip)) {
+        var e = JSON.parse(localStorage.getItem(tv_ip));
+        for (let t in e)
+            if (e[t]) {
+                var n = "http://" + tv_ip + ":8060/query/icon/" + e[t],
+                    r = document.getElementById(t);
+                r.style.backgroundImage = "url('" + n + "')", r.setAttribute("data-action", e[t])
+            }
+    } else localStorage.setItem(tv_ip, '{"ch_1":"","ch_2":"","ch_3":""}');
+    document.querySelector("link[rel~='icon']").href = dvc_img_url, 
+	document.querySelector(".hddn").classList.remove("hddn")
+};
+tester.onerror = tester.onabort = function() {
+	dvc_img.src = "imgs/no_tv.png";
+	use_form = true;
+	
+};
+tester.src = dvc_img_url;
+
+setTimeout( function() {
+  if ( !tester.complete  || !tester.naturalWidth ){
+    tester.src = "";
+	use_form = true;
+  }}, 
+  3000
+);
+
+
+
+var inpt = document.getElementById("inpt");
+
+function do_on_input(e) {
+	
+    if( "insertText" == e.inputType) do_transmit("keypress", "Lit_"+encodeURIComponent(e.data));
+
+	if( "deleteContentBackward" == e.inputType) do_transmit("keypress", "Backspace");
+
+}
+inpt.addEventListener("input", do_on_input);
+
+
+
 </script>
-
 
 </html>
