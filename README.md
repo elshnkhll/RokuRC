@@ -13,6 +13,6 @@ Works in Chrome, Safari, Edge, FireFox.
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=_TTzeqaWeXE
-" target="_blank"><img src="http://img.youtube.com/vi/_TTzeqaWeXE/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/_TTzeqaWeXE/sddefault.jpg" 
 alt="Roku Remote Control" width="480" height="360" border="10" /></a>
 
