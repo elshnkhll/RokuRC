@@ -14,7 +14,7 @@ Works in Chrome, Safari, Edge, FireFox.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=_TTzeqaWeXE
 " target="_blank"><img src="http://img.youtube.com/vi/_TTzeqaWeXE/sddefault.jpg" 
-alt="Roku Remote Control" width="480" height="360" style="width: 480px; height: 300px; object-fit: cover;" /></a>
+alt="Roku Remote Control" width="480" height="300" style="width: 480px; height: 300px; object-fit: cover; " /></a>
 
 
 
