@@ -2,8 +2,8 @@
 #include <WebSocketsServer.h>  // Source https://github.com/luc-github/ESP3D/tree/2.1.x/libraries/arduinoWebSockets
 #include <HTTPClient.h>
 
-const char* ssid = "VRGN_WiFi";
-const char* password = "EE99FF88BB77";
+const char* ssid = "My_SSID";
+const char* password = "MY_PSWRD";
 
 WebSocketsServer webSocket = WebSocketsServer(81);
 
