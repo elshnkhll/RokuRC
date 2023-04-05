@@ -1,6 +1,7 @@
 /*
-  https://lvgl.github.io/lv_img_conv/
-  USE CF_INDEXED_4_BIT
+  binary image rokurc_240x240px.bin was converted using
+  https://lvgl.github.io/lv_img_conv/   
+  CF_INDEXED_4_BIT format
 */
 
 
