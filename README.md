@@ -24,7 +24,7 @@ alt="Roku Remote Control" width="480" height="360" border="10" /></a>
 " target="_blank"><img src="http://img.youtube.com/vi/Eg3opfU_H2w/sddefault.jpg" 
 alt="Roku Remote Control" width="480" height="360" border="10" /></a>
 
-&bull; ESP32 Proxy Server for Roku TV Remote Control with Network Scanning and Device queryng custom for all App Buttons
+&bull; ESP32 Proxy Server for Roku TV Remote Control with Network Scanning and Device queryng for all App Buttons
 
 https://github.com/elshnkhll/RokuRC/tree/main/ESP_RokuRC_Proxy
 
