@@ -14,7 +14,7 @@ Works in Chrome, Safari, Edge, FireFox.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=_TTzeqaWeXE
 " target="_blank"><img src="http://img.youtube.com/vi/_TTzeqaWeXE/sddefault.jpg" 
-alt="Roku Remote Control" width="480" height="300" style="width: 480px; height: 300px; object-fit: cover; " /></a>
+alt="Roku Remote Control" width="400" height="300" /></a>
 
 
 
@@ -22,7 +22,7 @@ alt="Roku Remote Control" width="480" height="300" style="width: 480px; height: 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Eg3opfU_H2w
 " target="_blank"><img src="http://img.youtube.com/vi/Eg3opfU_H2w/sddefault.jpg" 
-alt="Roku Remote Control" width="480" height="360" border="10" /></a>
+alt="Roku Remote Control" width="400" height="300" /></a>
 
 &bull; ESP32 Proxy Server for Roku TV Remote Control with Network Scanning and Device queryng for all App Buttons
 
