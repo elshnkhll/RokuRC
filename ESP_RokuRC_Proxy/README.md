@@ -1,0 +1,3 @@
+This code wil create a proxy server to reley your ECP commands to Roky TV.
+Scans local network IP range for Roku TV sets and collects all apps and channels on 
+them when started, in order to sent this info to clent for displaying on interface.
