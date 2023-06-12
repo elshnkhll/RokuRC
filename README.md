@@ -19,6 +19,7 @@ alt="Roku Remote Control" width="400" height="300" /></a>
 
 
 &bull; LILYGO® TTGO T-Watch 2020 V1 ESP32 Based Roku TV Remote Control
+(if you want this app modified to work on **M5Paper ESP32 4.7"** or **TTGO T5 4.7"** just send me the board)
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Eg3opfU_H2w
 " target="_blank"><img src="http://img.youtube.com/vi/Eg3opfU_H2w/sddefault.jpg" 
