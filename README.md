@@ -7,7 +7,7 @@ http://rokurc.com
 
 Web Browser based Roku TV Remote Control with Power On/Off, Mute, Voume Up/Down, and custom App Buttons
 
-It does not use IR, so you can control the TV in the other room.
+It does not use IR, so you can control the TV in the other room. Utilising External Control Protocol (ECP) https://developer.roku.com/en-ca/docs/developer-program/dev-tools/external-control-api.md
 
 Works in Chrome, Safari, Edge, FireFox.
 
