@@ -29,5 +29,13 @@ alt="Roku Remote Control" width="400" height="300" /></a>
 
 https://github.com/elshnkhll/RokuRC/tree/main/ESP_RokuRC_Proxy
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=eTjCyJOpjn0
+" target="_blank"><img src="http://img.youtube.com/vi/eTjCyJOpjn0/sddefault.jpg" 
+alt="Roku Remote Control" width="400" height="300" /></a>
+
+&bull; ESP32 Proxy Server for Roku TV Private Listening
+
+https://github.com/elshnkhll/RokuRC/tree/main/ESP_RokuRC_Proxy
+
 
  
