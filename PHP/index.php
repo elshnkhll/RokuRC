@@ -1,11 +1,22 @@
 <?php
-	$title = 'Roku&#174; Remote Control | the best browser based remote control.';
-	$description = 'Control your Roku&#174; TV conveniently from any computer or smartphone.';
+	$title = 'Roku Remote Control | the best browser based remote control for Roku TV.';
+	$description = 'Control your Roku TV conveniently from any device with browser. No installations!';
 	$url = 'http://rokurc.com/';
-	$icon = $url.'imgs/icon.png';
+	$icon = $url.'imgs/porble.png';
+	
+// todo: tooltps large font, image tooltip
+	
+	
+	
 ?>
 <!DOCTYPE html>
-<html><head>
+<html lang="en"><head>
+
+<!-- script 
+	async 
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9450492747422027"
+    crossorigin="anonymous"
+></script -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,11 +28,65 @@
 <meta name="copyright" content="2023">
 <meta name="theme-color" content="#662d91">
 
+<meta property="og:locale" content="en_CA" data-react-helmet="true">
+<meta property="og:site_name" content="Roku RC">
+<meta property="og:title" content="<?php echo $title; ?>" >
+<meta property="og:url" content="<?php echo $url; ?>">
+<meta property="og:description" content="<?php echo $description; ?>" >
+<meta property="og:image" itemprop="image" content="<?php echo $icon; ?>">
+<meta property="og:type" content="website" />
+<meta property="og:updated_time" content="1704583614" >
+<meta property="og:image:width"  content="256" >
+<meta property="og:image:height" content="256" >
+
+<meta name="twitter:card" content="summary" data-react-helmet="true">
+<meta name="twitter:url" content="<?php echo $url; ?>" data-react-helmet="true">
+<meta name="twitter:title" content="<?php echo $title; ?>" data-react-helmet="true">
+<meta name="twitter:description" content="<?php echo $description; ?>" data-react-helmet="true">
+<meta property="twitter:image" content="<?php echo $icon; ?>" data-react-helmet="true"/>
+<meta name="twitter:site" content="@RokuPlayer" data-react-helmet="true">
+<meta name="twitter:creator" content="@RokuPlayer" data-react-helmet="true">
+
+<meta itemprop="description" content="<?php echo $description; ?>" data-react-helmet="true">
+<meta itemprop="image" content="<?php echo $icon; ?>" data-react-helmet="true">
+<meta itemprop="name" content="RokuRC" data-react-helmet="true">
+<meta itemprop="url" content="<?php echo $url; ?>" data-react-helmet="true">
+
 <title><?php echo $title; ?></title>
-  
 <link rel="shortcut icon" type="image/png" sizes="256x256" href="<?php echo $icon; ?>">
 
 <META NAME="robots" CONTENT="nofollow">
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SB7MWDSDVF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SB7MWDSDVF');
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Roku Remote Control",
+  "alternateName": "RokuRC",
+  "url": "<?php echo $url; ?>",
+  "image": [{
+	  "@type": "ImageObject",
+	  "url": "<?php echo $icon; ?>",
+	  "height": 256,
+	  "width": 256
+  }],
+  "description": "<?php echo $description; ?>"
+}
+</script>
+
+
+
 
 <style>
 
@@ -52,11 +117,13 @@
 	  line-height: 1.42857143;
 	  color: #333333;
 	  background-color: #fff;
+	  overflow:auto !important;
 	  
 	}
 
 	h2 {
-		margin-top: 0;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 
 	a {
@@ -78,10 +145,10 @@
 	  cursor: pointer;
 	}
 	.remote-buttons {
-	  margin: 20px auto;
-	  max-width: 444px;
+	  margin: 2px auto;
+	  max-width: 480px;
 	  min-width: 300px;
-	  padding: 15px 15px 3px 15px;
+	  padding: 10px;
 	  border: 1px solid #979797;
 	  border-radius: 8px;
 	  user-select: none;
@@ -107,6 +174,7 @@
 	  color: #fff;
 	  background-color: #662D91;
 	  border-radius: 15px;
+	  z-index: 10;
 	}
 	.remote-button:last-child {
 	  margin-right: 0;
@@ -142,17 +210,76 @@
 
   <div id="no-ads" class="remote-buttons">
 
-		<h1 style="display: none;">Roku&#174; Remote Control</h1> 
-		<h2 style="text-align:left;float:left;color: #49247A;">Roku&#174; Remote Control</h1> 
+		<h1 style="display: none;">Roku Remote Control</h1> 
+		<h2 style="text-align:left;float:left;color: #49247A;">Roku Remote Control</h1> 
 		<div style="text-align:right;float:right;font-size:30px;"> 
 			<a title="Open Info Page" href="help.php" target="_blank" class="hddn_1" > &#8505;&#65039;</a>
 			&nbsp;
-			<a title="Customise three Channell Buttons"  href="customize.php?MyRokuTVIP=<?php echo $_GET['MyRokuTVIP']; ?>" class="hddn rtt">&#9881;&#65039;</a>
+			<a id="cstmz" title="Customise three Channell Buttons"  href="customize.php?MyRokuTVIP=<?php echo $_GET['MyRokuTVIP']; ?>" class="hddn rtt">&#9881;&#65039;</a>
 		</div> 
 		<div style="clear:both;"></div>
+	
+	
+<style>
+
+#prgrss, #prgrss:hover {
+	width: 99%;
+	height: 5px;
+    accent-color: #662D91;
+	opacity: 1;
+}
+
+datalist {
+  display: flex;
+  justify-content: space-between;
+  writing-mode: lr;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+option {
+  padding: 0;
+  color: #662D91;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+
+#lbl_app:hover {
+    /* position: relative; TODO: show app icon on hover */
+}
+
+#pt_bar {
+	transition: max-height 1s;
+}
+</style>
+
+
+
+
+
+
+
+<div id="pt_bar" style="z-index: 0; opacity: 0; width: 100%; max-height: 0px; margin: 0; padding: 0;">
+	<input id="prgrss" class="slider" type="range" min="0" max="1000" value="50" list="markers">
+	<br><datalist id="markers">
+		<option id="lbl_time" value="-1"  label=" ... "></option>
+		<option id="lbl_app"  value="1001" label=" ... "></option>
+	</datalist>
+</div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 
 	  <div class="buttons-row">
-		<div style="background-color: #f44336;" class="clickable remote-button" data-action="Power">
+		<div style="background-color: Gray;" class="clickable remote-button" data-action="Power">
 		  <svg fill="white" width="20px" height="20px" viewBox="-2 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M7.498 17.1a7.128 7.128 0 0 1-.98-.068 7.455 7.455 0 0 1-1.795-.483 7.26 7.26 0 0 1-3.028-2.332A7.188 7.188 0 0 1 .73 12.52a7.304 7.304 0 0 1 .972-7.128 7.221 7.221 0 0 1 1.387-1.385 1.03 1.03 0 0 1 1.247 1.638 5.176 5.176 0 0 0-.993.989 5.313 5.313 0 0 0-.678 1.181 5.23 5.23 0 0 0-.348 1.292 5.22 5.22 0 0 0 .326 2.653 5.139 5.139 0 0 0 .69 1.212 5.205 5.205 0 0 0 .992.996 5.257 5.257 0 0 0 1.178.677 5.37 5.37 0 0 0 1.297.35 5.075 5.075 0 0 0 1.332.008 5.406 5.406 0 0 0 1.32-.343 5.289 5.289 0 0 0 2.211-1.682 5.18 5.18 0 0 0 1.02-2.465 5.2 5.2 0 0 0 .01-1.336 5.315 5.315 0 0 0-.343-1.318 5.195 5.195 0 0 0-.695-1.222 5.134 5.134 0 0 0-.987-.989 1.03 1.03 0 1 1 1.24-1.643 7.186 7.186 0 0 1 1.384 1.386 7.259 7.259 0 0 1 .97 1.706 7.413 7.413 0 0 1 .473 1.827 7.296 7.296 0 0 1-4.522 7.65 7.476 7.476 0 0 1-1.825.471 7.203 7.203 0 0 1-.89.056zM7.5 9.613a1.03 1.03 0 0 1-1.03-1.029V2.522a1.03 1.03 0 0 1 2.06 0v6.062a1.03 1.03 0 0 1-1.03 1.03z"/></svg>
 		</div>
 		<div class="clickable remote-button" data-action="VolumeMute">
@@ -276,7 +403,10 @@
         </svg>
       </div>
       <div class="clickable remote-button" data-action="Play">
-        <svg name="play" size="14" class="ret-icon play remote-play" width="14px" height="14px" viewBox="0 0 11 14">
+	 
+	    <svg id="pause_icon" style="display: none;" size="34" class="ret-icon play remote-play" width="34px" height="34px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M11 7H8V17H11V7Z" fill="white"></path><path d="M13 17H16V7H13V17Z" fill="white"></path></svg>
+	  
+        <svg id="play_icon" size="14" class="ret-icon play remote-play" width="14px" height="14px" viewBox="0 0 11 14">
           <g fill="none" fill-rule="evenodd" stroke="none" class="ret-icon-fill" stroke-width="1">
             <g fill="#FFF" transform="translate(-258 -886)">
               <g transform="translate(111 553)">
@@ -289,6 +419,7 @@
             </g>
           </g>
         </svg>
+		
       </div>
       <div class="clickable remote-button" data-action="Fwd">
         <svg name="fast-forward-right" size="14" class="ret-icon fast-forward-right remote-fast-forward-right" width="14px" height="14px" viewBox="0 0 21 15">
@@ -344,6 +475,10 @@
 		display: none !important;
 	}
 	
+	#atContainer-fcc007483ac7cd6410f12ab4e9397073 {
+		margin: 0 auto;
+	}
+	
 	
 	
 	/* *** proxy section *** */
@@ -394,8 +529,6 @@
 	
   <div class="buttons-row">
 
-  <!-- div id="eventsDiv"></div><br -->
-
     <input value="  " type="text" id="inpt" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" 
 		style="
 			width: 100%; 
@@ -407,11 +540,14 @@
 	
     <img id="dvc_img"
         src="imgs/no_tv.png"
-        style="border: 0px solid orange; 
+        style="
+		border: 0px solid blue;
         margin: 0 auto 0 auto; filter: invert(1)  contrast(3);
-        width: 100%; height: 80px; 
-		object-fit: cover; object-position: -5% 47%;"
+        width: 100%; height: 64px; 
+		object-fit: cover; object-position: -5% 44%;"
 		class="hddn_1"
+		onclick="window.location.replace('/set_tv_set_ip.php');"
+		title="Click to change your TV IP"
     >	
 
 	<div id="app_buttons" class="hddn_2" style="margin: 0 0 12px 0;" ></div>
@@ -422,191 +558,144 @@
   
   <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
+  
+
 </body>
+
+<script src="/js/NoSleep.js"></script>
+
 <script>
 
-var tv_ip = "<?php echo $_GET['MyRokuTVIP']; ?>";
-var channels = document.getElementsByClassName("channel");
-var use_form = false;
+	var tv_ip = "<?php echo $_GET['MyRokuTVIP']; ?>";
+	var channels = document.getElementsByClassName("channel");
+	var use_form = false;
 
-function do_on_channel() {
-    var e = this.getAttribute("data-action");
-	if ( e != "none" ) {
-		do_transmit("launch", e);
-	}
-}
-
-for (var i = 0; i < channels.length; i++) channels[i].addEventListener("click", do_on_channel);
-var elements = document.getElementsByClassName("clickable");
-
-var form = document.createElement("form");
-document.body.appendChild(form);
-form.method = "POST";
-form.target = "dummyframe";
-
-function do_on_click() {
-    var e = this.getAttribute("data-action");
-	do_transmit("keypress", e);
-}
-
-for (var i = 0; i < elements.length; i++) elements[i].addEventListener("click", do_on_click);
-
-var dvc_img = document.getElementById("dvc_img");
-var tester = new Image();
-var dvc_img_url = "http://" + tv_ip + ":8060/device-image.png";
-
-tester.onload = function() {
-    if (dvc_img.src = dvc_img_url, localStorage.getItem(tv_ip)) {
-        var e = JSON.parse(localStorage.getItem(tv_ip));
-        for (let t in e)
-            if (e[t]) {
-                var n = "http://" + tv_ip + ":8060/query/icon/" + e[t],
-                    r = document.getElementById(t);
-                r.style.backgroundImage = "url('" + n + "')", r.setAttribute("data-action", e[t])
-            }
-    } else localStorage.setItem(tv_ip, '{"ch_1":"","ch_2":"","ch_3":""}');
-    document.querySelector("link[rel~='icon']").href = dvc_img_url, 
-	document.querySelector(".hddn").classList.remove("hddn")
-};
-tester.onerror = tester.onabort = function() {
-	dvc_img.src = "imgs/no_tv.png";
-	use_form = true;
-	
-};
-tester.src = dvc_img_url;
-
-setTimeout( function() {
-  if ( !tester.complete  || !tester.naturalWidth ){
-    tester.src = "";
-	use_form = true;
-  }}, 
-  3000
-);
-
-var inpt = document.getElementById("inpt");
-
-function do_on_input(e) {
-	
-    if( "insertText" == e.inputType) do_transmit("keypress", "Lit_"+encodeURIComponent(e.data));
-
-	if( "deleteContentBackward" == e.inputType) do_transmit("keypress", "Backspace");
-
-}
-
-inpt.addEventListener("input", do_on_input);
-
-document.addEventListener('keyup', function(e){
-  if (e.code === 'Space')      { do_transmit("keypress", "Play");   }
-  if (e.code === 'ArrowLeft')  { do_transmit("keypress", "Left");   } 
-  if (e.code === 'ArrowRight') { do_transmit("keypress", "Right");  }
-  if (e.code === 'ArrowUp')    { do_transmit("keypress", "Up");     }
-  if (e.code === 'ArrowDown')  { do_transmit("keypress", "Down");   }
-  if (e.code === 'Enter')      { do_transmit("keypress", "Select"); }
-  if (e.code === 'Escape')     { do_transmit("keypress", "Select"); }
-});
-
-
-
-<?php if( isset( $_GET['MyESP32IP'] ) ){ ?>
-	
-     var websock;
-	 var tv_sets;
-	 
-	 var proxy_ip = "<?php echo $_GET['MyESP32IP']; ?>";
-	 
-	 var select_a_tv = document.getElementById('select_a_tv');
-	 select_a_tv.onchange = function(){
-		 
-		var crrnt_tv = select_a_tv.options[select_a_tv.selectedIndex].value;
-		tv_ip = tv_sets[ crrnt_tv ].ip;
+	var noSleep = new NoSleep();
 		
-		var app_buttons = document.getElementById('app_buttons');
-		app_buttons.innerHTML = '';
-		for (const app in tv_sets[ crrnt_tv ].apps) { // populating with app <buttons>
-			var bttn = document.createElement('button');
-			var txt = tv_sets[ crrnt_tv ].apps[app];
-			txt = txt.split('-')[0].replace('Plus', '+').trim();
-			bttn.innerHTML = txt;
-			bttn.setAttribute("data-action", app);
-			if( app.includes("tvinput") ){
-				bttn.setAttribute("class", "tvinput");
-			}else{
-				bttn.setAttribute("class", "app");
-			}
-			app_buttons.appendChild( bttn );
-			bttn.onclick = function(){
-				do_transmit("launch", this.getAttribute("data-action"));
-			}
+	function do_on_channel() {
+		var e = this.getAttribute("data-action");
+		if ( e != "none" ) {
+			do_transmit("launch", e);
 		}
-		sessionStorage.setItem("crrnt_tv", crrnt_tv);
-	 }
+	}
 
-     window.onload = function(){ setTimeout( InitWebSocket, 100 ); } 
+	for (var i = 0; i < channels.length; i++) channels[i].addEventListener("click", do_on_channel);
+	var elements = document.getElementsByClassName("clickable");
 
-     function InitWebSocket() {
+	var form = document.createElement("form");
+	document.body.appendChild(form);
+	form.method = "POST";
+	form.target = "dummyframe";
 
-        websock = new WebSocket('ws://'+proxy_ip+':81/'); 
-		websock.ready = true;
-	
-		websock.onmessage = function(evt) { 
-			var rspns = JSON.parse( evt.data );
-			if ( 'ECP_cmmnd' in rspns ){
-				websock.ready = true;
-				console.log("ready");
-				return;
-			}
-			tv_sets = rspns;			
-			if( Object.keys(tv_sets).length > 0 ){
-				for (const tv in tv_sets) { // populating <select> with <options>
-					var optn = document.createElement('option');
-					optn.value = tv;
-					optn.innerHTML = tv_sets[ tv ].name;
-					optn.setAttribute("data-ip", tv_sets[ tv ].ip)
-					if( tv == sessionStorage.getItem("crrnt_tv") ){
-						optn.setAttribute("selected", "selected");
-					}
-					select_a_tv.appendChild( optn );					 
+	function do_on_click() {
+		var e = this.getAttribute("data-action");
+		do_transmit("keypress", e);
+	}
+
+	for (var i = 0; i < elements.length; i++) elements[i].addEventListener("click", do_on_click);
+
+	var dvc_img = document.getElementById("dvc_img");
+	var tester = new Image();
+	var dvc_img_url = "http://" + tv_ip + ":8060/device-image.png";
+
+	tester.onload = function() {
+		if (dvc_img.src = dvc_img_url, localStorage.getItem(tv_ip)) {
+			var e = JSON.parse(localStorage.getItem(tv_ip));
+			for (let t in e){
+				if( t.startsWith('google')) continue;
+				if ( t == "current_TV") continue;
+				if ( e[t] ) {
+					var n = "http://" + tv_ip + ":8060/query/icon/" + e[t],
+						r = document.getElementById(t);
+					r.style.backgroundImage = "url('" + n + "')", r.setAttribute("data-action", e[t])
 				}
-				select_a_tv.onchange();  // tigger select
-			}else{
-				var optn = document.createElement('option');
-				optn.innerHTML = 'NO DEVICE FOUND!';
-				select_a_tv.appendChild( optn );
 			}
+		} else localStorage.setItem(tv_ip, '{"ch_1":"","ch_2":"","ch_3":""}');
+		document.querySelector("link[rel~='icon']").href = dvc_img_url, 
+		document.querySelector(".hddn").classList.remove("hddn");
+	};
+	tester.onerror = tester.onabort = function() {
+		dvc_img.src = "imgs/no_tv.png";
+		use_form = true;
+	};
+	tester.src = dvc_img_url;
+	setTimeout( function() {
+	  if ( !tester.complete  || !tester.naturalWidth ){
+		tester.src = "";
+		use_form = true;
+	  }}, 
+	  3000
+	);
 
-		};
+	var inpt = document.getElementById("inpt");
 
-        websock.onerror   = function(evt) { console.log( "WBSCK ERROR" ); };
-        websock.onopen    = function(evt) { console.log( "WBSCK OPEN" ); };
-        websock.onclose   = function(evt) {
-          if (evt.wasClean) {
-            console.log(`WBSCK CLOSED cleanly, code=${evt.code} reason=${evt.reason}`);
-          } else {
-            console.log( "WBSCK DIED" );
-			select_a_tv.innerHTML = "";			
-			var optn = document.createElement('option');
-			optn.innerHTML = 'NO PROXY FOUND!';
-			select_a_tv.appendChild( optn );
-          }
-        };
+	function do_on_input(e) {
+		
+		if( "insertText" == e.inputType) do_transmit("keypress", "Lit_"+encodeURIComponent(e.data));
 
-     }
-	 
-	 // ESP32 version of
-	 function do_transmit(k,v){
-		 if ( websock.ready && websock.readyState == 1 && tv_ip != "" ){
-		    websock.ready = false;
-			websock.send("http://" + tv_ip + ":8060/" + k + "/" + v);
-			console.log("cmmnd: "+ k + "/" + v);
-		 }
-	 }
+		if( "deleteContentBackward" == e.inputType) do_transmit("keypress", "Backspace");
+
+	}
+
+	inpt.addEventListener("input", do_on_input);
 	
-<?php }else{ ?>
+	var k_codes = {
+  		Space      :"Play",
+		ArrowLeft  :"Left",
+		ArrowRight :"Right",
+		ArrowUp    :"Up",
+		ArrowDown  :"Down",
+		Enter      :"Select",
+		Escape     :"Home",
+		Minus      :"VolumeDown",
+		Equal      :"VolumeUp",
+		Backquote  :"VolumeMute",
+		Backslash  :"Backspace",
+		Period	   :"Fwd",
+		Comma	   :"Rev",
+		Slash	   :"Info",
+		Semicolon  :"InstantReplay",
+		Quote	   :"Search",		
+		BracketRight: "Enter",
+  		BracketLeft:  "Back"
+	};
 
-    // HTML version of
+	document.addEventListener('keyup', function(e){
+
+	  e.stopPropagation();
+	  e.preventDefault();  
+	  e.returnValue = false;
+	  e.cancelBubble = true;
+
+	  console.log( e.code );
+	  
+	  if( e.code in k_codes ){
+		  var b = document.querySelectorAll('[data-action="' + k_codes[ e.code] + '"]')[0];
+		  b.style.setProperty("background-color", 'rgb(139, 111, 168)', "important");
+		  do_transmit("keypress", k_codes[ e.code]);
+		  clearTimeout( bgt );
+		  var bgt = setTimeout( ()=> {
+				b.style.backgroundColor = null;
+		  }, 800); 
+	  }
+	  
+	  return false;
+	  
+	  
+	  
+	});
+
+	document.addEventListener('keydown', function(e){
+	  if( e.target.tagName == "INPUT" ) return;	
+	  e.stopPropagation();
+	  e.preventDefault();
+	});
+
+	var med_tckr;
 	function do_transmit(k,v){
 		if( use_form ){
 			form.action = "http://" + tv_ip + ":8060/" + k + "/" + v;
+			form.style.maxHeight = "0px";
 			form.submit();				
 		}else{
 			fetch("http://" + tv_ip + ":8060/" + k + "/" + v, {
@@ -615,10 +704,243 @@ document.addEventListener('keyup', function(e){
 			});
 		}	
 		console.log("cmmnd: "+ k + "/" + v);
+		
+		if( v == "Power" ){
+			clearTimeout( pwr_tckr );
+			pwr_tckr = setTimeout(query_device_info, 3000);
+		}			
+		if( ["Play","Select","Left","Right","InstantReplay"].includes( v ) ){
+			clearTimeout( med_tckr );
+			med_tckr = setTimeout(query_media_player, 1000);
+		}else{			
+			clearTimeout( med_tckr );
+			med_tckr = setTimeout(query_media_player, 3000);
+		}
+		
 	}
 
-<?php } ?>
+	document.addEventListener("DOMContentLoaded", event => {
+	   // we can move only if we are not in a browser's tab
+	   isBrowser = matchMedia("(display-mode: browser)").matches;
+	   if (!isBrowser) {
+		  window.resizeTo(500, 900);
+		  window.moveTo(25, 1);
+	   }
+	});
 
+	document.addEventListener("visibilitychange", function () {
+	  if (document.hidden) {
+		state = "hidden";
+		con_err("tab is hidden");
+		clearTimeout( pwr_tckr );
+	  } else {
+		con_err("tab is visible");
+		query_device_info();
+		clearTimeout( pwr_tckr );
+		pwr_tckr = setTimeout(query_device_info, 10000);
+	  }
+	});
+
+	// to do: comment this func.
+	function con_err(txt){
+		console.log('\x1b[0;103m\x1b[1;91m '+ txt +' \x1b[0m');
+		// console.trace();
+	}
+	
+	
+	
+	
+	
+	
+	
+	//   ***** Player *****
+	
+	function xml2json(xml) {                                                                                                                                                     
+	  var el = xml.nodeType === 9 ? xml.documentElement : xml                                                                                                               
+	  var h  = {name: el.nodeName}                                                                                                                                          
+	  h.content    = Array.from(el.childNodes || []).filter(e => e.nodeType === 3).map(e => e.textContent).join('').trim()                                                  
+	  h.attributes = Array.from(el.attributes || []).filter(a => a).reduce((h, a) => { h[a.name] = a.value; return h }, {})                                                 
+	  h.children   = Array.from(el.childNodes || []).filter(e => e.nodeType === 1).map(c => h[c.nodeName] = xml2json(c))                                                    
+	  return h                                                                                                                                                              
+	}  
+
+	// test: ms_2_time(12*60*60*1000+34*60*1000+56*1000+789);
+	function ms_2_time(s) {
+		
+	  function pad(n, z) { z = z || 2; return ('00' + n).slice(-z); }
+
+	  var ms = s % 1000;
+	  s = (s - ms) / 1000;
+	  var secs = s % 60;
+	  s = (s - secs) / 60;
+	  var mins = s % 60;
+	  var hrs = (s - mins) / 60;
+	  
+	  var timecode = "" + (( hrs > 0 ) ? ( hrs + ':') : ""); // conditional hrs
+	  timecode = timecode + pad(mins) + ':' + pad(secs); // + '.' + pad(ms, 3);
+	  return timecode;
+	}
+
+	var pwr_tckr;
+	function query_device_info(){
+		con_err('pwr');
+		clearTimeout( pwr_tckr );
+		var xmlhr = new XMLHttpRequest();
+		xmlhr.open("GET", 'http://' + tv_ip + ':8060/query/device-info', true);
+		xmlhr.timeout = 2000;
+		xmlhr.ontimeout = (e) => { con_err('timeout'); };
+		xmlhr.onreadystatechange = () => {
+			if (xmlhr.status != 200) {
+				do_hide();
+				return;
+			}
+			if (xmlhr.readyState == 4) {
+				j = xml2json( xmlhr.responseXML );
+				
+				// console.log( j );
+				
+				document.getElementById("cstmz").href = "customize_CORS.php?MyRokuTVIP=" + tv_ip;
+
+				var bb = document.querySelectorAll('[data-action="Power"]')[0];
+
+				if( j['power-mode'].content == "PowerOn" ){
+					bb.style.setProperty("background-color", 'red', "important");
+					clearTimeout( med_tckr );
+					med_tckr = setTimeout(query_media_player, 200);
+					clearTimeout( pwr_tckr );
+					pwr_tckr = setTimeout(query_device_info, 10000);
+				}else{
+					bb.style.setProperty("background-color", 'gray', "important");
+					do_hide();
+					clearTimeout( pwr_tckr );
+				}
+			}
+		};
+		xmlhr.send();		
+	}
+	
+	
+	var jj = {};
+	var pstn = drtn = 0;
+	var appn = " ... ";
+	var apid = 0;
+	var state = "";
+
+	function query_media_player(){
+		clearTimeout( med_tckr );
+		var xmlhr = new XMLHttpRequest();
+		xmlhr.open("GET", 'http://' + tv_ip + ':8060/query/media-player', true);
+		xmlhr.timeout = 2000;
+		xmlhr.ontimeout = (e) => { con_err('timeout'); };
+		xmlhr.onreadystatechange = () => {
+			if (xmlhr.readyState == 4) {
+				jj = xml2json( xmlhr.responseXML );
+				
+				state = jj?.attributes?.state;
+				pstn = parseInt( jj?.position?.content.slice(0, -3) ) || 0;
+				drtn = parseInt( jj?.duration?.content.slice(0, -3) ) || 10*60*60*1000;
+				appn = jj?.plugin?.attributes?.name;
+				apid = jj?.plugin?.attributes?.id;
+				
+				if( state == "play" ){
+					do_show();					
+					document.getElementById("pause_icon").style.display = "block";
+					document.getElementById("play_icon").style.display = "none";
+					return;
+				}
+				
+				if( state == "pause" ){
+					do_show();
+					document.getElementById("play_icon").style.display = "block";
+					document.getElementById("pause_icon").style.display = "none";
+					return;
+				}
+				
+				do_hide();
+			}
+		};
+		xmlhr.send();
+	}
+
+	var prgrss = document.getElementById("prgrss");
+	var markers = document.getElementById("markers");
+	
+	// ZZZZZZ prgrss.onchange = function(et){ et.target.value = 5; }
+	
+	var lbl_time = document.getElementById("lbl_time");
+	var lbl_app = document.getElementById("lbl_app");
+	
+
+	// do_set_time_position(56*1000, 12*60*60*1000+34*60*1000+56*1000);
+	var ticker;
+	function do_set_time_position(){
+		lbl_time.label = ms_2_time(pstn)+' / '+ms_2_time(drtn);
+		prgrss.value = Math.round((pstn / drtn) * 1000);
+		
+		if( (pstn < drtn) && (state=="play") ){
+			pstn = pstn + 1000;
+			clearTimeout( ticker );
+			ticker = setTimeout(do_set_time_position, 1000);
+		}else{
+			clearTimeout( ticker );
+			// clearTimeout( pwr_tckr );
+			// pwr_tckr = setTimeout(query_device_info, 100);
+
+		}
+	}
+	
+	function do_set_time_title( t ){
+		lbl_app.label = t.replace('Plus', '+').replace('The ', '').replace('Channel', 'Ch.').replace('Player', 'P').trim();
+	}
+	
+	var pt_bar = document.getElementById("pt_bar");
+	function do_hide(){
+		setTimeout( ()=> {
+			if( !["play","pause"].includes( state ) ){
+				pt_bar.style.maxHeight = "0px";
+				pt_bar.style.opacity = '0';
+				noSleep.disable();
+			}
+		}, 5000);
+	}
+	
+	// colors detected by  https://lokeshdhakar.com/projects/color-thief/
+	// if you want your app color to be included just open an isuue here https://github.com/elshnkhll/RokuRC/issuesv
+	var apps = {
+		"837"   : "rgb(252, 5, 5)",     // YT
+		"93580" : "rgb(252, 102, 4)",   // iWebTV Player
+		"84056" : "rgb(28, 100, 155)",  // The Weather Network
+		"13535" : "rgb(215, 168, 51)",  // Plex
+		"12"    : "rgb(229, 20, 28)",   // Netflix
+		"291097": "rgb(12, 139, 156)",  // Disney+
+		"252585": "rgb(251, 243, 4)",   // Pluto TV
+		"31440" : "rgb(4, 92, 252)",    // Paramount+
+		"34376" : "rgb(221, 64, 57)",   // ESPN
+		"61322" : "rgb(4, 38, 212)",    // Max
+		"13"    : "rgb(28, 148, 251)",  // Prime Video
+		"2285"  : "rgb(37, 225, 133)",  // Hulu
+		"86398" : "rgb(232, 248, 4)",   // SYFY
+	};
+	
+	function do_show(){
+
+		if( apid in apps ){
+			prgrss.style.accentColor = apps[ ""+apid ];
+		}else{
+			prgrss.style.accentColor = "#662D91";
+		}		
+		
+		pt_bar.style.opacity = '1';
+		do_set_time_position();
+		do_set_time_title(appn);
+		pt_bar.style.maxHeight = "50px";
+		noSleep.enable();
+	}
+	
+	query_device_info();
+	
 </script>
+	  
+
 
 </html>
