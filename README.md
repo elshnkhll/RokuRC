@@ -36,10 +36,16 @@ alt="Roku Remote Control" width="400" height="300" /></a>
 https://github.com/elshnkhll/ROKU-TV-Private-Listening-ESP32
 
 
+
+
 https://www.libhunt.com/r/rokurc
+
 https://alternativeto.net/software/rokurc/about/
+
 https://medium.com/@google_64607/remoku-tv-vs-rokurc-com-web-remote-showdown-for-the-chronically-lazy-fd98adf965f9
+
 https://todaymarkiting.com/http-rokurc-com-web-browser-based-roku-tv-remote-control/
+
 
 
  
