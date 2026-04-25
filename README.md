@@ -1,7 +1,7 @@
 # RokuRC
 
 
-&bull; Roku Remote Control DEMO: http://rokurc.com
+&bull; Roku Remote Control DEMO: http://rokurc.com or https://rokurc.com/app.php
 
 Roku Remote Online - Web Browser based online free Roku TV Remote Control with Power On/Off, Mute, Voume Up/Down, and custom App Buttons
 
